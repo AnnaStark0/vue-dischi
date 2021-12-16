@@ -1,8 +1,8 @@
 <template>
-  <div class="container my-5">
+  <div class="container py-3">
     <div class="row">
 
-      <div class="col-12 col-sm-5 col-md-3" v-for="(album, index) in albums" :key="index">
+      <div class="col-3" v-for="(album, index) in albums" :key="index">
           <AlbumCard :info="album"/>
       </div>
 

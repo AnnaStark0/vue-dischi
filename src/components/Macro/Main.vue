@@ -16,5 +16,8 @@ components: {
 </script>
 
 <style lang="scss" scoped>
+main {
+  background-color: black;
+}
 
 </style>
