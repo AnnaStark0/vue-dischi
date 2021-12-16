@@ -19,8 +19,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/style/Variabili.scss";
+
 header {
-  background-color: rgb(109, 109, 109);
+  background-color: $spotifyColor;
 
   img {
       width: 50px;
