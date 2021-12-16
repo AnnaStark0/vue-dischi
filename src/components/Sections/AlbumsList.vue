@@ -3,7 +3,7 @@
     <div class="row">
 
       <div class="col-12 col-sm-5 col-md-3" v-for="(album, index) in albums" :key="index">
-          <AlbumCard/>
+          <AlbumCard :info="album"/>
       </div>
 
     </div>

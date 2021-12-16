@@ -1,13 +1,10 @@
 <template>
   <div class="album my-3">
-    <img
-      src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg"
-      alt=""
-    />
-    <h3 class="text-center my-2">NEW JERSEY</h3>
+    <img :src="info.poster" alt="">
+    <h3 class="text-center my-2">{{info.title}}</h3>
     <p class="text-center">
-      Bon Jovi <br />
-      1988
+      {{info.author}} <br />
+      {{info.year}}
     </p>
   </div>
 </template>
@@ -15,6 +12,9 @@
 <script>
 export default {
   name: "AlbumCard",
+  props: {
+     info: Object 
+  }
 };
 </script>
 
