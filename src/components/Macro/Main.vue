@@ -1,12 +1,17 @@
 <template>
 <main>
-  
+<AlbumsList/>
 </main>
 </template>
 
 <script>
+import AlbumsList from '../Sections/AlbumsList.vue';
+
 export default {
-name: 'Main'
+name: 'Main',
+components: {
+  AlbumsList
+}
 }
 </script>
 
