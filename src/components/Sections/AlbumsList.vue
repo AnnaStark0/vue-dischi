@@ -1,5 +1,10 @@
 <template>
   <div class="container py-3">
+      <div class="row">
+          <div class="col">
+              <SelectGen/>
+          </div>
+      </div>
     <div class="row">
 
       <div class="col-3" v-for="(album, index) in albums" :key="index">
@@ -14,11 +19,13 @@
 import axios from 'axios';
 
 import AlbumCard from '../Commons/AlbumCard.vue';
+import SelectGen from '../Commons/SelectGen.vue';
 
 export default {
 name: 'AlbumsList',
 components: {
-    AlbumCard
+    AlbumCard,
+    SelectGen
 },
 data () {
 return {
