@@ -1,6 +1,6 @@
 <template>
   <div class="select-gen">
-    <select class="form-select" aria-label="Default select example">
+    <select v-model="selectVal" class="form-select form-select-sm" aria-label="Default select example" @change="$emit('select', selectVal)">
       <option selected>Open this select menu</option>
       <option value="1">Rock</option>
       <option value="2">Pop</option>
@@ -13,6 +13,11 @@
 <script>
 export default {
   name: "SelectGen",
+  data() {
+      return {
+          selectVal: '', 
+      }
+  }
 };
 </script>
 
