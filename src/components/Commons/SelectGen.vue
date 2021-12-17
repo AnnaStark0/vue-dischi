@@ -1,6 +1,6 @@
 <template>
   <div class="select-gen">
-    <select v-model="selectVal" class="form-select form-select-sm" aria-label="Default select example" @change="$emit('select', selectVal)">
+    <select v-model="selectVal" class="form-select form-select-sm" aria-label="Default select example" @change="$emit('franco', selectVal)">
       <option selected>Open this select menu</option>
       <option value="1">Rock</option>
       <option value="2">Pop</option>

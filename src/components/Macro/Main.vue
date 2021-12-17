@@ -1,6 +1,5 @@
 <template>
 <main>
-
 <AlbumsList/>
 </main>
 </template>
